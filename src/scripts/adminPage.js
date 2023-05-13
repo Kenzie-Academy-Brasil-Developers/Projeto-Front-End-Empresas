@@ -247,7 +247,7 @@ async function depCards() {
         const eye = document.createElement('img')
         eye.id=element.id
         eye.className='eye'
-        eye.src='/assets/Eye.svg'
+        eye.src='../assets/Eye.svg'
         eye.addEventListener('click',async ()=>{
             localStorage.setItem('deptID', element.id)
             openModalDeptInfo()
@@ -259,7 +259,7 @@ async function depCards() {
 // --------------------------------------------------------------------------pencil>
         const pencil = document.createElement('img')
         pencil.className='pencil'
-        pencil.src='/assets/pencil.svg'
+        pencil.src='../assets/pencil.svg'
         pencil.id=element.id
         pencil.addEventListener('click', async ()=>{
             openUpDModal()
@@ -269,7 +269,7 @@ async function depCards() {
         const bin = document.createElement('img')
         bin.id=element.id
         bin.className='bin'
-        bin.src='/assets/bin.svg'
+        bin.src='../assets/bin.svg'
         bin.addEventListener('click', ()=>{
             openModalDelDept()
             localStorage.setItem('dept', bin.id)
@@ -323,15 +323,15 @@ async function depFilterCards(filter) {
 
         const eye = document.createElement('img')
         eye.className='eye'
-        eye.src='/assets/Eye.svg'
+        eye.src='../assets/Eye.svg'
 
         const pencil = document.createElement('img')
         pencil.className='pencil'
-        pencil.src='/assets/pencil.svg'
+        pencil.src='../assets/pencil.svg'
 
         const bin = document.createElement('img')
         bin.className='bin'
-        bin.src='/assets/bin.svg'
+        bin.src='../assets/bin.svg'
 
         container.append(div)
         div.append(text__div, div2)
@@ -365,7 +365,7 @@ async function userCards() {
 // ------------------------------------------------------------------------------pencil2
         const pencil = document.createElement('img')
             pencil.className='pencil'
-            pencil.src='/assets/pencil.svg'
+            pencil.src='../assets/pencil.svg'
             pencil.id=element.id
             pencil.addEventListener('click', async ()=>{
                 openUpEModal()
@@ -376,7 +376,7 @@ async function userCards() {
         const bin = document.createElement('img')
             bin.className='bin2'
             bin.id=element.id
-            bin.src='/assets/bin.svg'
+            bin.src='../assets/bin.svg'
             bin.addEventListener('click', async ()=>{
                 openModalDelUser(bin.id)
                 // localStorage.setItem('delUserId', bin.id)
@@ -775,7 +775,7 @@ const logout = ()=>{
         localStorage.removeItem('adm')
         toast(green, 'Deslogado')
             setTimeout(() => {
-                location.replace('/pages/index.html')
+                location.replace('../../index.html')
               }, 1300)
         
     })

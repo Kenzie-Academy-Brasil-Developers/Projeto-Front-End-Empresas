@@ -135,7 +135,7 @@ const logout = () =>{
         localStorage.removeItem('department_id')
         toast(green, 'Deslogado')
         setTimeout(() => {
-            location.replace('/pages/index.html')
+            location.replace('../../index.html')
           }, 1300)
         
     })

@@ -41,17 +41,17 @@ const handleButtons = ()=>{
     const registerBtn2=document.querySelector('.modal__button2')
 
     homeBtn.addEventListener('click', (click)=>{
-        location.replace('/pages/index.html')
+        location.replace('../../index.html')
         localStorage.removeItem('token')
         localStorage.removeItem('adm')
     })
     registerBtn.addEventListener('click', (click)=>{
-        location.replace('/pages/register.html');
+        location.replace('../pages/register.html');
         localStorage.removeItem('token')
         localStorage.removeItem('adm')
     })
     registerBtn2.addEventListener('click', (click)=>{
-        location.replace('/pages/register.html');
+        location.replace('../pages/register.html');
         localStorage.removeItem('token')
         localStorage.removeItem('adm')
     })
@@ -88,10 +88,10 @@ const handleLogin = async () => {
 
 const redirect = async (info)=>{
     if (info==true) {
-        location.replace("/pages/adminPage.html")
+        location.replace("../pages/adminPage.html")
     }
     else if(info==false) {
-        location.replace('/pages/userPage.html')
+        location.replace('../pages/userPage.html')
     }
 
 

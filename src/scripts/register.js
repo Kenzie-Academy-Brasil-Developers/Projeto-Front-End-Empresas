@@ -13,7 +13,7 @@ async function newUser (body) {
         if(res.ok){
                 toast(green, 'Cadastrado')
                 setTimeout(() => {
-                    location.replace('/pages/login.html')
+                    location.replace('../pages/login.html')
                   }, 1300)
             
            return res.json()
@@ -32,15 +32,15 @@ const handleButtons=()=>{
     const backBtn=document.querySelector('.modal__button2');
 
     homeBtn.addEventListener('click', (click)=>{
-        location.replace('/pages/index.html')
+        location.replace('../../index.html')
         localStorage.removeItem('token')
         localStorage.removeItem('adm')
     })
     loginBtn.addEventListener('click', (click)=>{
-        location.replace('/pages/login.html');
+        location.replace('./src/pages/login.html');
     })
     backBtn.addEventListener('click', (click)=>{
-        location.replace('/pages/index.html');
+        location.replace('../../index.html');
     })
 }
 
