@@ -37,7 +37,7 @@ const handleButtons=()=>{
         localStorage.removeItem('adm')
     })
     loginBtn.addEventListener('click', (click)=>{
-        location.replace('./src/pages/login.html');
+        location.replace('../pages/login.html');
     })
     backBtn.addEventListener('click', (click)=>{
         location.replace('../../index.html');

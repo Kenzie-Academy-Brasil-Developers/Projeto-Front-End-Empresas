@@ -136,7 +136,7 @@ const handleButtons=()=>{
         location.replace('./src/pages/login.html');
     })
     registerBtn.addEventListener('click', (click)=>{
-        location.replace('/pages/register.html');
+        location.replace('./src/pages/register.html');
     })
 }
 
