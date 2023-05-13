@@ -32,7 +32,7 @@ const handleButtons=()=>{
     const backBtn=document.querySelector('.modal__button2');
 
     homeBtn.addEventListener('click', (click)=>{
-        location.replace('/pages/homePage.html')
+        location.replace('/pages/index.html')
         localStorage.removeItem('token')
         localStorage.removeItem('adm')
     })
@@ -40,7 +40,7 @@ const handleButtons=()=>{
         location.replace('/pages/login.html');
     })
     backBtn.addEventListener('click', (click)=>{
-        location.replace('/pages/homePage.html');
+        location.replace('/pages/index.html');
     })
 }
 

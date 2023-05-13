@@ -41,7 +41,7 @@ const handleButtons = ()=>{
     const registerBtn2=document.querySelector('.modal__button2')
 
     homeBtn.addEventListener('click', (click)=>{
-        location.replace('/pages/homePage.html')
+        location.replace('/pages/index.html')
         localStorage.removeItem('token')
         localStorage.removeItem('adm')
     })

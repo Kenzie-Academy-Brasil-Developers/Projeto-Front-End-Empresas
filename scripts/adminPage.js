@@ -775,7 +775,7 @@ const logout = ()=>{
         localStorage.removeItem('adm')
         toast(green, 'Deslogado')
             setTimeout(() => {
-                location.replace('/pages/homePage.html')
+                location.replace('/pages/index.html')
               }, 1300)
         
     })
