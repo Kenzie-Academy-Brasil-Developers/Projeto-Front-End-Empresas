@@ -1,0 +1,592 @@
+/* ---------------------------------------section1> */
+.section1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap:30px;
+    height: 305px;
+width: 100%;
+background-color: var(--grey5);
+margin-top: 20px;
+overflow-y: scroll;
+
+}
+.dept__div {
+    display: flex;
+    flex-direction: row;
+    height: 126px;
+width: 360px;
+border:1px solid var(--brand1);
+background-color: var(--white);
+margin: 25px 20px 0px 90px;
+padding: 20px;
+
+}
+.text__div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    height:90px;
+    width:320px;
+}
+.dept__name{
+margin:0px;
+}
+.dept__description{
+    margin:0px;
+
+}
+.eye{
+    cursor: pointer;
+    height:20px;
+    width:25px;
+
+margin:0px;
+}
+.pencil{
+    margin:0px;
+    cursor: pointer;
+    height:20px;
+    width:25px;
+
+}
+.imgs__div {
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+    gap: 20px;
+}
+.bin{
+    cursor: pointer;
+margin:0px;
+height:20px;
+width:25px;
+
+}
+.dept__company{
+
+}
+
+/* ---------------------------------------<section1 */
+/* -------------------------------------------section2> */
+.section2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:30px;
+    background-color: var(--grey5);
+    height: 300px;
+    overflow-y: scroll;
+}
+.section__title{
+    font-size: 30px;
+    font-weight: 700;
+}
+.bin2{
+    height:20px;
+    width:25px;
+    cursor: pointer;
+}
+
+
+
+/* -------------------------------------------<section2 */
+/* -------------------------------------------------deptInfo> */
+.modalDeptInfo{
+    border:none;
+}
+.modalDeptInfo::backdrop{
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+.deptInfoDiv{
+    display: flex;
+    flex-direction: column;
+}
+.userInfoDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    height: 196px;
+    width: 306px;
+    margin: 20px;
+}
+.userDeptInfo{
+    margin-top: 20px;
+   background-color: var(--grey4);
+   display: flex;
+   flex-direction: row;
+   overflow-x: scroll;
+   overflow-y: hidden;
+   height: 290px;
+   width: 775px;
+    align-items: center;
+   
+}
+.deptInfoName{
+    font-weight: 700;
+font-size: 36px;
+    
+}
+.deptInfoDescr{
+    font-weight: 700;
+    font-size: 20px;
+}
+.deptInfoComp{
+    font-weight: 400;
+    font-size: 18px;
+}
+.xContainer{
+    position: absolute;
+    right:10px;
+    top:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    width: 30px;
+    height:30px;
+    
+}
+.deptInfoEName{
+    font-weight: 700;
+    font-size: 20px;
+}
+.deptInfoEComp{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.deptInfoEBtn{
+color: var(--action2);
+background-color:var(--white);
+}.deptInfoEBtn:hover{
+    color: var(--white);
+    background-color: var(--action3);
+}
+.deptInfoDiv2{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.deptInfoSelect{
+    color: var(--grey2);
+    background-color: var(--white);
+    width: 100%;
+    margin-right: 20px;
+    height: 52px;
+}
+.deptInfoBtn{
+height: 52px;
+color: var(--white);
+background-color: var(--action1);
+} .deptInfoBtn:hover{
+    background-color: var(--action3);
+}
+
+/* -------------------------------------------------<deptInfo */
+
+.header2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.filters__div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+select{
+    color: var(--grey2);
+    background-color: var(--white);
+
+    height: 52px;
+    width: 288px;
+
+    font-weight: 400;
+    font-size: 20px;
+}
+/* ---------------------------------------------------create> */
+.modalCreateDept{
+    border:none;
+}
+.modalCreateDept::backdrop{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.modalDiv{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 382px;
+    width: 506px;
+    left: 0px;
+    top: 0px;
+    border: none;
+    
+    
+}
+.create__button {
+    color: var(--white);
+background-color: var(--brand1);
+}
+.modalCreateDept{
+    height: 402px;
+width: 506px;
+}
+
+.modalCreateTitle{
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 10px;
+}
+.company_id{
+   
+    width:100%;
+}
+
+.name{
+    height:53px;
+}
+.description{
+    height:53px;
+}
+.modalCreateDept__button{
+    color: var(--white);
+background-color: var(--action1);
+}
+.modalCreateDept__button:hover{
+    background-color: var(--action3);
+}
+/* -----------------------------------------------------<create */
+
+
+
+
+
+
+
+
+
+
+
+    
+
+.modalDiv{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: ;
+}
+.modalDiv2{
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.modalTextDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: space-between;
+
+}
+.modalCreateDept__input1{
+height:52px;
+background-color: var(--white);
+}
+.modalCreateDept__input2{
+    height:52px;
+    background-color: var(--white);
+}
+.modalCreateDept__select {
+    height:52px;
+    width:100%;
+
+    color: var(--grey3);
+    background-color: var(--white);
+}
+.modalCreateDept__button {
+    height:52px;
+    width:100%;
+
+}
+.closeModal{
+    cursor: pointer;
+}
+.closeModalDelDept{
+    cursor: pointer;
+}
+/* -----------------------------------------------------------delDeptModal> */
+.modalDelDept {
+    width: 733px;
+height: 342px;
+border: none;
+}
+.modalDelDept::backdrop{
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+.modalDelDept__div{
+    width: 733px;
+    height: 342px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--white);
+}
+.closeModalDelDept{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right:10px;
+    top:10px;
+}
+.modalDelDeptP{
+    padding: 0px;
+    margin: 0px 0px 0px 160px;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    width:400px;
+    font-weight: 700;
+    font-size: 28px;
+}
+.delDeptBtn{
+    height: 48px;
+width: 422px;
+margin-left: 150px;
+margin-top: 20px;
+color: var(--white);
+background-color: var(--action2);
+border:none;
+}
+.delDeptBtn:hover{
+    background-color: var(--action3);
+}
+/* -----------------------------------------------------------<delDeptModal */
+/* -----------------------------------------------------------upEModal> */
+.upEModal{
+    border:none;
+    height: 359px;
+width: 506px;
+
+}
+.upEModal::backdrop{
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+.upEHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.upETitle{
+    font-weight: 700;
+font-size: 36px;
+margin: 0px;
+margin-top: 10px;
+}
+.upEX{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right:10px;
+    top:10px;
+}
+.upEInput{
+    height:53px
+}
+.upEBtn{
+    width:100%;
+    color: var(--white);
+    background-color: var(--action1);
+}
+.upEBtn:hover{
+background-color: var(--action3);
+}
+/* -----------------------------------------------------------<upEeptModal */
+/* ---------------------------------------------------------delUserModal> */
+.delUserModal{
+    height: 192px;
+width: 533px;
+border:none;
+
+}
+.delUserModal::backdrop{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.delUserX{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right:10px;
+    top:10px;
+}
+.delUserText{
+    padding: 0px;
+    margin: 0px 0px 0px 160px;
+position: absolute;
+left: 3%;
+top: 30%;
+    text-align: center;
+    width:400px;
+    font-weight: 700;
+    font-size: 28px;
+
+}
+.delUserBtn{
+    height: 48px;
+width: 422px;
+position: absolute;
+left: 23%;
+top: 53%;
+color: var(--white);
+background-color: var(--action2);
+
+}
+.delUserBtn:hover{
+    background-color: var(--action3);
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------------------<delUserModal */
+
+
+.xContainer{
+    cursor: pointer;
+}
+
+.eye{
+    cursor: pointer;
+}
+.delUserModal{
+    width: 733px;
+    height: 342px;
+}
+.delUserDiv{
+    display: flex;
+
+    background-color: var(--white);
+    height: 100px;
+    width: 100px;
+}
+/* ----------------------------------------------------------------pencilDeptModal> */
+.upDModal{
+    border:none;
+}
+.upDModal::backdrop{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.upDDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    height: 330px;
+    width: 506px;
+    color: var(--grey1);
+    background-color: var(--white);
+
+}
+.upDTitle{
+    font-weight: 700;
+font-size: 36px;
+margin:0px;
+margin-top: 10px;
+}
+.upDInput{
+    height:53px;
+}
+.upDBtn{
+    width:100%;
+    margin-bottom: 10px;
+    color: var(--white);
+    background-color: var(--action1);
+}
+.upDBtn:hover{
+    background-color: var(--action3);
+}
+.upDX{
+    position: absolute;
+    right:10px;
+    top:10px;
+  
+    background-color: var(--white);
+    width: 30px;
+    height:30px;
+}
+/* ----------------------------------------------------------------<pencilDeptModal */
+/* ------------------------------------------------------------------------toast> */
+.toast__container {
+    z-index: 4;
+    position: fixed;
+    top: 20rem;
+    right: 2rem;
+  
+    border: 1px solid;
+    color: var(--grey-100);
+  
+    width: 200px;
+    height: 100px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+    animation: fadeIn .4s linear;
+  }
+  
+  .toast__fadeOut {
+    animation: fadeOut .4s linear;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .input__focus {
+    border-color: var(--red-500);
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      transform: translateY(-150%);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  
+    100% {
+      transform: rotate(180deg);
+      scale: 0.1;
+      opacity: 0;
+    }
+  }
